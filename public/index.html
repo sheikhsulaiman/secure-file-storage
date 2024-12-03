@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secure File Storage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Secure File Storage</h1>
+
+      <div class="upload-section">
+        <h2>Upload File</h2>
+        <form id="uploadForm">
+          <input type="file" id="fileInput" required />
+          <button type="submit">Upload & Encrypt</button>
+        </form>
+        <div id="uploadResult"></div>
+      </div>
+
+      <div class="download-section">
+        <h2>Download File</h2>
+        <form id="downloadForm">
+          <input type="text" id="fileId" placeholder="Enter File ID" required />
+          <input type="text" id="iv" placeholder="Enter IV" required />
+          <button type="submit">Download & Decrypt</button>
+        </form>
+        <div id="downloadResult"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
